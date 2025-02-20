@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 30px 0 40px 0;
+}
+
+.btn {
+  padding: 4px;
+  font-weight: 700;
+  background-color: #84dcc6;
+  border: none;
+  color: white;
+  box-shadow: 1px 6px 12px rgba(154, 154, 154, 0.1);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background-color: #4ba08b;
+}
+
+.alert-red {
+  color: red;
+  background-color: rgb(252, 179, 179);
+  height: 20px;
+}
+
+.d-none {
+  display: none;
+}
+
+p {
+  background-color: rgb(255, 0, 0);
+  color: rgb(232, 197, 197);
+  text-transform: capitalize;
+  font-size: smaller;
+  padding: 5px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+}
+
+.btn.active-section {
+  background-color: #4ba08b;
+  color: #ffffff;
+}
+
+/* Responsive design for tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    padding: 30px;
+  }
+}
+
+/* Responsive design for desktops */
+@media (min-width: 1025px) {
+  .container {
+    width: 70%;
+    padding: 40px;
+  }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 599px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+}
